@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ChapUseState from "./Chapter/ChapUseState";
+import PracticeUseState from "./practice/PracticeUseState";
+import ChapProps from "./Chapter/ChapProps";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,10 @@ root.render(
       만약 App.js 가 아니라 다른 파일을 사용하길 원한다면
       파일명.js 를 import 해서 사용할 수 있음
        */}
-    <App />
-      <ChapUseState/>
+      <App />
+      {/*<ChapUseState/>
+    <PracticeUseState />*/}
+      <ChapProps></ChapProps>
   </React.StrictMode>
 );
 
