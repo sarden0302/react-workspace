@@ -4,6 +4,7 @@
     객체 메서드나 클래스 = function
     간단한 함수나 콜백 = const
  */
+/*
 function ChapComponent() {
     // 자바스크립트
 
@@ -11,7 +12,7 @@ function ChapComponent() {
     // return
     return (
         <div>
-            {/* html 태그 사용 */}
+            {/!* html 태그 사용 *!/}
             <함수 />
             <화살표함수 />
         </div>
@@ -26,7 +27,7 @@ function 함수() {
     // return
     return (
         <div>
-            {/* html 태그 사용 */}
+            {/!* html 태그 사용 *!/}
         </div>
     )
 }
@@ -40,7 +41,7 @@ const 화살표함수 = () => {
     // return
     return (
         <div>
-            {/* html 태그 사용 */}
+            {/!* html 태그 사용 *!/}
         </div>
     )
 }
@@ -82,4 +83,4 @@ const add2 = (a, b) => a + b;
 console.log(add1(2,3));  // const 는 밑에 작성 시 읽을 수 없다
 console.log(add2(2,3));  // const 는 밑에 작성 시 읽을 수 없다
 
-export default ChapComponent;
+export default ChapComponent;*/
