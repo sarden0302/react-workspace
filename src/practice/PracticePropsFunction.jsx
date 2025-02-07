@@ -34,13 +34,13 @@ const Parent1 = () => {
 }
 
 // 자식 컴포넌트 (버튼 클릭 시 숫자 증가)
-const Child2 = ({increaseNumber }) => {
+const Child2 = ({increaseNumber}) => {
     return <button onClick={increaseNumber}>숫자 증가</button>;
 };
 
 // 부모 컴포넌트
 const Parent2 = () => {
-    const [number , setNumber  ] = useState(0);
+    const [number , setNumber] = useState(0);
 
     const handleIncreaseNumber = () => {
         setNumber(number + 1);
