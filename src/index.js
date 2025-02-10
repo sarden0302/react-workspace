@@ -7,8 +7,10 @@ import reportWebVitals from './reportWebVitals';
 // import PracticeUseState from "./practice/PracticeUseState";
 // import ChapProps from "./Chapter/ChapProps";
 // import PracticeProps from "./practice/PracticeProps";
-import ChapPropsFunction from "./Chapter/ChapPropsFunction";
-import PracticePropsFunction from "./practice/PracticePropsFunction";
+import ChapPropsFunction from "./Chapter/ChapPropx/ChapPropsFunction";
+import ChapPropsDefault from "./Chapter/ChapPropx/ChapPropsDefault";
+import PracticePropsDefault from "./practice/PracticePropsDefault";
+// import PracticePropsFunction from "./practice/PracticePropsFunction";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,9 +27,12 @@ root.render(
       <PracticeUseState />
       <ChapProps />
       <PracticeProps/>
+      <PracticePropsFunction />
       */}
       <ChapPropsFunction />
-      <PracticePropsFunction />
+      <ChapPropsDefault />
+      <PracticePropsDefault />
+
   </React.StrictMode>
 );
 

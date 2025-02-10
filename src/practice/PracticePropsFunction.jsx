@@ -9,6 +9,7 @@ const PracticePropsFunction = () => {
             <Parent3 />
             <Parent4 />
             <Parent5 />
+            <ParentComponent />
         </div>
     )
 }
@@ -105,6 +106,7 @@ const Child5 = ({ toggleLike }) => {
 const Parent5 = () => {
     const [liked, setLiked] = useState(false);
 
+    // onCLick or onSubmit 같이 수행 기능 명칭 handle 표기
     const handleToggleLike = () => {
         setLiked(!liked);
     };
@@ -116,5 +118,38 @@ const Parent5 = () => {
         </div>
     );
 };
+
+// 자식 컴포넌트
+const UserList = ({ users }) => {
+    return (
+        <div>
+            <h2>사용자 목록</h2>
+            <ul>
+                {users.map((user, index) => (
+                    <li key={index}>
+                        {user.name} - {user.age}세
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+// 부모 컴포넌트
+const ParentComponent = () => {
+    const users = [
+        { name: "홍길동", age: 25 },
+        { name: "김철수", age: 30 },
+        { name: "이영희", age: 28 },
+    ];
+
+    return (
+        <div>
+            <h1>배열 Props 전달</h1>
+            <UserList users={users} />
+        </div>
+    );
+};
+
 
 export default PracticePropsFunction;

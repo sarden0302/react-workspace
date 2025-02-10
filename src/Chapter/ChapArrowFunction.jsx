@@ -3,6 +3,9 @@ const ChapArrowFunction = () => {
         return a + b;
     }
 
+    // function        vs      const
+    // this O                  this x
+    // 어디서든 호출 가능         선언 이후 호출 가능
     // return 에서 a + b; 단일 코드만 작성하기 때문에
     // {} 와  return 사용 가능
     const addTwo = (a, b) => a + b;
