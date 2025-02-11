@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
+// App.js 는 a 태그 모음집으로 활용
+/*
 function App() {
     // 자바 스크립트를 작성하는 공간
 
@@ -14,6 +16,7 @@ function App() {
         </div>
     );
 }
+ */
 
 function AppDescription() {
     // 자바 스크립트를 작성하는 공간

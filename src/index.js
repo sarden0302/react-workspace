@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ChapUseEffect from "./Chapter/ChapPropx/ChapUseEffect";
+// import reportWebVitals from './reportWebVitals';
 // import ChapUseState from "./Chapter/ChapUseState";
 // import PracticeUseState from "./practice/PracticeUseState";
 // import ChapProps from "./Chapter/ChapProps";
 // import PracticeProps from "./practice/PracticeProps";
-import ChapPropsFunction from "./Chapter/ChapPropx/ChapPropsFunction";
-import ChapPropsDefault from "./Chapter/ChapPropx/ChapPropsDefault";
-import PracticePropsDefault from "./practice/PracticePropsDefault";
+// import ChapPropsFunction from "./Chapter/ChapPropx/ChapPropsFunction";
+// import ChapPropsDefault from "./Chapter/ChapPropx/ChapPropsDefault";
+// import PracticePropsDefault from "./practice/PracticePropsDefault";
+// import ChapPropsArray from "./Chapter/ChapPropx/ChapPropsArray";
+// import PracticePropArray from "./practice/PracticePropArray";
 // import PracticePropsFunction from "./practice/PracticePropsFunction";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,15 +31,18 @@ root.render(
       <ChapProps />
       <PracticeProps/>
       <PracticePropsFunction />
-      */}
       <ChapPropsFunction />
       <ChapPropsDefault />
       <PracticePropsDefault />
-
+      <ChapPropsArray />
+      <PracticePropArray />
+      <PracticePropArray />
+      */}
+      <ChapUseEffect />
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
