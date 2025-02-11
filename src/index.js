@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import ChapUseEffect from "./Chapter/ChapPropx/ChapUseEffect";
+import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
 // import reportWebVitals from './reportWebVitals';
 // import ChapUseState from "./Chapter/ChapUseState";
 // import PracticeUseState from "./practice/PracticeUseState";
@@ -37,8 +38,9 @@ root.render(
       <ChapPropsArray />
       <PracticePropArray />
       <PracticePropArray />
-      */}
       <ChapUseEffect />
+      */}
+      <PracticeUseEffectAxios />
   </React.StrictMode>
 );
 
