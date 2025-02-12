@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import ChapUseEffect from "./Chapter/ChapPropx/ChapUseEffect";
-import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
+// import ChapUseEffect from "./Chapter/ChapPropx/ChapUseEffect";
+// import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
+import PizzaList from "./BackendAPI/PizzaList";
+import RootPath from "./RootPath";
+import {BrowserRouter} from "react-router-dom";
 // import reportWebVitals from './reportWebVitals';
 // import ChapUseState from "./Chapter/ChapUseState";
 // import PracticeUseState from "./practice/PracticeUseState";
@@ -19,28 +22,38 @@ import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      {/* return 내에 사용할 수 있는 주석
+      <BrowserRouter>
+          {/* BrowserRouter 로 이동할 경로를 설정했다면 index.js 최상단에 브라우저 라우터로
+              모든 javascript, javascriptXML 파일을 감싸줘야한다
 
-      <App /> 는 필수로 사용해야하는 자바스크립트 파일이 아님
-      만약 App.js 가 아니라 다른 파일을 사용하길 원한다면
-      파일명.js 를 import 해서 사용할 수 있음
-       */}
-      <App />
-      {/*
-      <ChapUseState/>
-      <PracticeUseState />
-      <ChapProps />
-      <PracticeProps/>
-      <PracticePropsFunction />
-      <ChapPropsFunction />
-      <ChapPropsDefault />
-      <PracticePropsDefault />
-      <ChapPropsArray />
-      <PracticePropArray />
-      <PracticePropArray />
-      <ChapUseEffect />
-      */}
-      <PracticeUseEffectAxios />
+              BrowserRouter 와 Routes 는 모든 파일에서 최초 1회만 작성
+           */}
+          <RootPath />
+          {/* return 내에 사용할 수 있는 주석
+
+          <App /> 는 필수로 사용해야하는 자바스크립트 파일이 아님
+          만약 App.js 가 아니라 다른 파일을 사용하길 원한다면
+          파일명.js 를 import 해서 사용할 수 있음
+          <App />
+           */}
+          {/*
+          <ChapUseState/>
+          <PracticeUseState />
+          <ChapProps />
+          <PracticeProps/>
+          <PracticePropsFunction />
+          <ChapPropsFunction />
+          <ChapPropsDefault />
+          <PracticePropsDefault />
+          <ChapPropsArray />
+          <PracticePropArray />
+          <PracticePropArray />
+          <ChapUseEffect />
+          <PracticeUseEffectAxios />
+          <PizzaList />
+          */}
+      </BrowserRouter>
+
   </React.StrictMode>
 );
 
