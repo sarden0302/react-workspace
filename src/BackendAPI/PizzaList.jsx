@@ -60,19 +60,6 @@ const PizzaList = () => {
             {/* <ul><li> 태그를 <div> <div> 태그로 변경해서 설정
                 map() 형식을 map({}) 중괄호 형식으로 변환
             */}
-            <ul>
-                {/* axios 로 가져온 피자 목록 map 으로 전달받아 보여주기 */}
-                {
-                    pizzas.map((pizza) => (
-                        // <li key={index}>     -> index 는 0번 부터 시작
-                        <li key={pizza.id}> {/* -> index */}
-                            <h3>{pizza.name}</h3>
-                            <p>가격 : {pizza.price} 원</p>
-                            <p>{pizza.description}</p>
-                        </li>
-                    ))
-                }
-            </ul>
             <div>
                 {
                     pizzas.map((pizza) =>
@@ -87,6 +74,7 @@ const PizzaList = () => {
                                 {/* react 는 a 태그 대신에 Link 태그를 이용하여 경로 설정할 수 있다. */}
                                 {/* 경로 이동의 경우
                                     react-router-dom 을 설치하여 Link 를 사용할 수 있다.
+                                    -> js 이동을 위해 (html은 한개 이므로 a 태그 사용 x)
                                  */}
                                 <Link to={`/pizzas/detail/${pizza.id}`}>
                                     <button>상세보기</button>
