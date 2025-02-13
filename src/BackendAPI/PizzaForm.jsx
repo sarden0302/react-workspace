@@ -18,7 +18,8 @@ const PizzaFormChapterTwo = () => {
     // input 값 변할 때 마다 데이터 변경
     const handleChangeValue = (e) => {
         /* name 은 target 에서 가져올 key 값으로 default
-            so,
+           name  = input 내 name 에 작성된 값 key 로 받기
+           value = input 내 value 의 value 값
          */
         const {name, value} = e.target;
 
@@ -89,19 +90,26 @@ const PizzaFormChapterTwo = () => {
                 set변수이름에 저장된 값은 변수이름으로 전달되어 DB 에 저장
                 onChange= {handleChangeValue}
             */}
-            <label>피자 이름</label>
+            <label htmlFor="pizzaName">피자 이름</label>
             <input type="text"
                    placeholder="피자 이름"
+                   id="pizzaName"
+                   name="pizzaName"
                    value={pizzaName}
                    onChange={handleChangeValue}/>
 
-            <label>피자 가격</label>
+            <label htmlFor="price">피자 가격</label>
             <input type="number"
                    placeholder="피자 가격"
+                   id="price"
+                   name="price"
                    value={price}    // 기본 값 초기화
                    onChange={handleChangeValue}/>
 
+            <label htmlFor="description">피자 설명</label>
             <textarea placeholder="피자 설명"
+                      id="description"
+                      name="description"
                       value={description}
                       onChange={handleChangeValue}>
             </textarea>

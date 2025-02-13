@@ -1,8 +1,10 @@
 // ViewController 처럼 주소와 js 를 연결해주는 컨트롤러와 같은 설정
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Form} from "react-router-dom";
 import PizzaList from "./BackendAPI/PizzaList";
 import PizzaDetail from "./BackendAPI/PizzaDetail";
 import PizzaForm from "./BackendAPI/PizzaForm";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 // 경로를 설정해주는 js 파일은 function 을 많이 사용
 
 // const RootPath = () => {
@@ -28,6 +30,7 @@ function RootPath () {
                현재는 2번 방식 사용
                RootPath 와 같이 사용할 수 있음
             */}
+            <Header  />
             {/*
                 React 경로로 표기하는 Component 와 경로설정을 하지 않은 Component 구분이 필요
                 경로 설정이 필요한 Component 의 경우 Routes 내부에 작성
@@ -51,6 +54,7 @@ function RootPath () {
                 <Route path="/pizzas/detail/:id" element={<PizzaDetail />} />
                 <Route path="/pizza/add" element={<PizzaForm />} />
             </Routes>
+            <Footer />
         </Router>
     )
 }
