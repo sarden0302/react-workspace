@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
 // import ChapUseEffect from "./Chapter/ChapPropx/ChapUseEffect";
 // import PracticeUseEffectAxios from "./practice/PracticeUseEffectAxios";
-import PizzaList from "./BackendAPI/PizzaList";
+// import PizzaList from "./BackendAPI/PizzaList";
 import RootPath from "./RootPath";
+import LoginRoute from "./LoginRoute";
 import {BrowserRouter} from "react-router-dom";
+import ReactRouterDom from "./ReactRouterDom";
+// import ReactRouterDom from "./ReactRouterDom";
 // import reportWebVitals from './reportWebVitals';
 // import ChapUseState from "./Chapter/ChapUseState";
 // import PracticeUseState from "./practice/PracticeUseState";
@@ -27,7 +30,6 @@ root.render(
 
           BrowserRouter 와 Routes 는 모든 파일에서 최초 1회만 작성
        */}
-      <RootPath />
       {/* return 내에 사용할 수 있는 주석
 
       <App /> 는 필수로 사용해야하는 자바스크립트 파일이 아님
@@ -50,8 +52,9 @@ root.render(
       <ChapUseEffect />
       <PracticeUseEffectAxios />
       <PizzaList />
+      <RootPath />
       */}
-
+      <LoginRoute />
   </React.StrictMode>
 );
 

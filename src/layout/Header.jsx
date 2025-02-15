@@ -8,7 +8,7 @@ const Header = () => {
             <nav>
                 <ul>
                     <li><Link to="/">홈</Link></li>
-                    <li><Link to="/add-pizza">피자 추가</Link></li>
+                    <li><Link to="/pizza/add">피자 추가</Link></li>
                 </ul>
             </nav>
         </header>
