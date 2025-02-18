@@ -2,10 +2,12 @@ import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 
 const Mypage = ({user}) => {
+    console.log("Mypage :", user);
     const navigate = useNavigate();
     const [storedUser, setStoredUser] = useState(user);
 
     useEffect(() => {
+        console.log("useEffect :", user);
         if (!user) {
             const savedUser = localStorage.getItem("user");
             if (savedUser) {
